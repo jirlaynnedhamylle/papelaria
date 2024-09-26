@@ -1,0 +1,45 @@
+/* Background and color customization */
+.bg-light-pink {
+    background: rgb(212,34,73);
+background: linear-gradient(90deg, rgba(212,34,73,0.560749299719888) 0%, rgba(255,255,255,0) 48%, rgba(212,34,73,0.5635504201680672) 100%);
+}
+
+.text-dark-pink {
+    color: #e10b3d;
+}
+
+.bg-dark-pink {
+    background-color: #d6336c;
+}
+
+.btn-outline-dark-pink {
+    border-color: #d6336c;
+    color: #d6336c;
+}
+
+.btn-outline-dark-pink:hover {
+    background-color: #d6336c;
+    color: white;
+}
+
+/* Styling for cards */
+.card {
+    margin-bottom: 30px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling for the carousel */
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #d6336c;
+}
