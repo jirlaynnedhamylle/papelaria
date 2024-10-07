@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viva colors Papelaria</title>
+    <title>Viva Colors Papelaria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -25,11 +25,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <!-- Substitua o texto pelo logo -->
-            <a class="navbar-brand fw-bold text-dark-pink" href="#">
-                <img src="papelaria.jpg" alt="Logo Luivin's">
+            <div class="navbar-brand fw-bold text-dark-pink">
+                <img src="papelaria.jpg" alt="Logo Viva Colors">
                 Viva Colors
-            </a>
+            </div>            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,17 +36,14 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cadernos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Favoritos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Minha Conta</a></li>
                     <li class="nav-item cart-icon">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="badge bg-danger">0</span>
-                            </a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger">0</span>
+                        </a>
                     </li>
-        
                 </ul>
             </div>
         </div>
@@ -78,9 +74,8 @@
             <div class="carousel-item">
                 <img src="https://www.simpack.pt/core/conteudos/Mala-com-material-escolar-Simpack.jpeg" class="d-block w-100" alt="Promoção 3">
                 <div class="carousel-caption d-none d-md-block">
-                      <h5>Grandes Ofertas!</h5>
+                    <h5>Grandes Ofertas!</h5>
                     <p>Aproveite nossas promoções imperdíveis.</p>
-
                 </div>
             </div>
         </div>
@@ -94,52 +89,205 @@
         </button>
     </div>
 
-    <!-- Frete Grátis Section -->
+    <!-- Cartão Fidelidade Section -->
     <main class="container my-5">
         <section class="text-center mb-5">
             <h2 class="text-dark-pink">Cartão Fidelidade</h2>
-            <p class="lead">Na primera compra, pedidos acima de R$150,00 recebe um cartão fidelidade</p>
-            <p class="lead">E 5% da sua compra vai estar ajudando a campanha do mês. </p> 
+            <p class="lead">Na primeira compra, pedidos acima de R$150,00 recebem um cartão fidelidade</p>
+            <p class="lead">E 5% da sua compra vai estar ajudando a campanha do mês.</p> 
         </section>
 
-        <!-- Product Cards Section -->
-        <section class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_gel_0_5mm_molin_flowers_18905_1_76afef01e147364b2e08014134ad0ef2.jpg" class="card-img-top" alt="Caneta">
-                    <div class="card-body">
-                        <h5 class="card-title">Caneta Gel 0.5mm Molin Flowers</h5>
-                        <p class="card-text">R$ 24,50</p>
-                        <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+        <!-- Product Carousel Section -->
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_gel_0_5mm_molin_flowers_18905_1_76afef01e147364b2e08014134ad0ef2.jpg" class="card-img-top" alt="Caneta Gel 0.5mm Molin Flowers">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caneta Gel 0.5mm Molin Flowers</h5>
+                                    <p class="card-text">R$ 24,50</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_universitario_tilibra_connect_10_materias_bunnyfly_19875_1_294eccbadcf81f92597acc0957ea97a3.jpg" class="card-img-top" alt="Caderno Tilibra Connect 10 Matérias BunnyFly">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caderno Tilibra Connect 10 Matérias BunnyFly</h5>
+                                    <p class="card-text">R$ 48,50</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/marca_texto_tris_holic_cute_com_carimbo_19829_1_6d0f3d7728c1834ae7b16e1aaa23d230.jpg" class="card-img-top" alt="Marca Texto Tris Holic Cute com Carimbo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marca Texto Tris Holic Cute com Carimbo</h5>
+                                    <p class="card-text">R$ 11,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/estojo_tris_com_bolsos_19825_1_8b4a43fc55afaa8e451676d732d77c87.jpg" class="card-img-top" alt="Estojo Tris com Bolso">
+                                <div class="card-body">
+                                    <h5 class="card-title">Estojo Tris com Bolso</h5>
+                                    <p class="card-text">R$ 29,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/lapis_de_cor_crayola_24_cores_19823_1_fde0b8c26e6bc2e69e03b9d973a6c3eb.jpg" class="card-img-top" alt="Lápis de Cor Crayola 24 Cores">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lápis de Cor Crayola 24 Cores</h5>
+                                    <p class="card-text">R$ 34,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_de_anotacoes_molin_mini_19826_1_4c8c01277b7c87c2f52ff42e97879b09.jpg" class="card-img-top" alt="Caderno de Anotações Molin Mini">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caderno de Anotações Molin Mini</h5>
+                                    <p class="card-text">R$ 19,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_tinteiro_molin_19824_1_e3f949c00e27c8c124e04d1e4b73c2b0.jpg" class="card-img-top" alt="Caneta Tinteiro Molin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caneta Tinteiro Molin</h5>
+                                    <p class="card-text">R$ 15,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/lapis_de_cor_faber_castell_19822_1_35f4f47eb686a8b76c7c7c0bda9c354d.jpg" class="card-img-top" alt="Lápis de Cor Faber Castell">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lápis de Cor Faber Castell</h5>
+                                    <p class="card-text">R$ 27,50</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/bloco_de_anotacoes_100_folhas_19821_1_324d3b61e86d2f81dc66af0085e96503.jpg" class="card-img-top" alt="Bloco de Anotações 100 Folhas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bloco de Anotações 100 Folhas</h5>
+                                    <p class="card-text">R$ 12,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/kit_de_canetas_marcadoras_19820_1_9a0c94223c9e0b35d098b1d8da3c1c91.jpg" class="card-img-top" alt="Kit de Canetas Marcadoras">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kit de Canetas Marcadoras</h5>
+                                    <p class="card-text">R$ 39,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/livro_de_colorir_19819_1_a8c6c5af88cb3c765d07d6fa3c2b04e3.jpg" class="card-img-top" alt="Livro de Colorir">
+                                <div class="card-body">
+                                    <h5 class="card-title">Livro de Colorir</h5>
+                                    <p class="card-text">R$ 22,50</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/lapis_de_cor_molin_19828_1_1408dada8e15dba34fc59b66f7191be5.jpg" class="card-img-top" alt="Lápis de Cor Molin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lápis de Cor Molin</h5>
+                                    <p class="card-text">R$ 35,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/livro_para_colorir_19818_1_91f9b1a7cd2e8cf0d4f8e9aa73a9df76.jpg" class="card-img-top" alt="Livro para Colorir">
+                                <div class="card-body">
+                                    <h5 class="card-title">Livro para Colorir</h5>
+                                    <p class="card-text">R$ 18,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_marcadora_19827_1_5e4ef93d4c2aeef7b24a6c6d0c8b7332.jpg" class="card-img-top" alt="Caneta Marcadora">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caneta Marcadora</h5>
+                                    <p class="card-text">R$ 9,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_escolar_molin_19830_1_264ec4f79cbe3cdffcdf15f3eeb17d8a.jpg" class="card-img-top" alt="Caderno Escolar Molin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caderno Escolar Molin</h5>
+                                    <p class="card-text">R$ 26,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2 mb-4">
+                            <div class="card shadow-sm">
+                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/kit_de_canetas_tinteiro_19831_1_5bc4c0e44e0a47338f9b61de2eb8cfc5.jpg" class="card-img-top" alt="Kit de Canetas Tinteiro">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kit de Canetas Tinteiro</h5>
+                                    <p class="card-text">R$ 59,90</p>
+                                    <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_universitario_tilibra_connect_10_materias_bunnyfly_19875_1_294eccbadcf81f92597acc0957ea97a3.jpg" class="card-img-top" alt="Caderno UNIVERSITÁRIO Tilibra Connect 10 Matérias BunnyFly">
-                    <div class="card-body">
-                        <h5 class="card-title">Caderno UNIVERSITÁRIO Tilibra Connect 10 Matérias BunnyFly</h5>
-                        <p class="card-text">R$ 48,50</p>
-                        <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/marca_texto_tris_holic_cute_com_carimbo_19829_1_6d0f3d7728c1834ae7b16e1aaa23d230.jpg" class="card-img-top" alt="Marca Texto Tris Holic Cute com Carimbo">
-                    <div class="card-body">
-                        <h5 class="card-title">Marca Texto Tris Holic Cute com Carimbo/h5>
-                        <p class="card-text">R$ 11,90</p>
-                        <a href="#" class="btn btn-outline-dark-pink">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark-pink text-white text-center py-4">
-        <p>© 2024 Viva Colors Papelaria. Todos os direitos reservados.</p>
+    <footer class="bg-light-pink py-4">
+        <div class="container text-center">
+            <p class="text-dark-pink mb-0">&copy; 2024 Viva Colors. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
