@@ -5,124 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Conta - Viva Colors</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .bg-light-pink {
-            background: rgb(212,34,73);
-            background: linear-gradient(90deg, rgba(212,34,73,0.560749299719888) 0%, rgba(255,255,255,0) 48%, rgba(212,34,73,0.5635504201680672) 100%);
+        /* Painel elegante */
+        .account-panel {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 30px;
+            background: white;
+            transition: all 0.3s ease-in-out;
         }
-        .text-dark-pink {
-            color: #e10b3d;
+
+        .account-panel:hover {
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
         }
-        .btn-outline-dark-pink {
-            border-color: #d6336c;
+
+        .account-icon {
             color: #d6336c;
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
-        .btn-outline-dark-pink:hover {
-            background-color: #d6336c;
+
+        .edit-btn {
             color: white;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
+            background-color: #d6336c;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="bg-light-pink py-3">
-        <div class="container text-center">
-            <h1 class="text-dark-pink fw-bold">Viva Colors</h1>
-            <p class="lead">A melhor loja de papelaria para você!</p>
+    <!-- Minha Conta Header -->
+    <header class="bg-light-pink py-3 text-center">
+        <div class="container">
+            <h1 class="text-dark-pink fw-bold">Minha Conta</h1>
+            <p class="lead">Gerencie seus dados e preferências</p>
         </div>
     </header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
-            <div class="navbar-brand fw-bold text-dark-pink">
-                <img src="papelaria.jpg" alt="Logo Viva Colors" style="height: 50px;">
-                Viva Colors
-            </div>            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Minha Conta</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Favoritos</a></li>
-                    <li class="nav-item cart-icon">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge bg-danger">0</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <!-- Painel de Conta -->
     <main class="container my-5">
-        <h2 class="text-center text-dark-pink">Minha Conta</h2>
-        
-        <!-- Informações do Usuário -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h5>Detalhes da Conta</h5>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="account-panel text-center p-4 shadow-sm">
+                    <i class="fas fa-user-circle account-icon"></i>
+                    <h4>Dados Pessoais</h4>
+                    <p>Nome: João Silva</p>
+                    <p>Email: joao.silva@gmail.com</p>
+                    <button class="btn edit-btn">Editar Dados</button>
+                </div>
             </div>
-            <div class="card-body text-center">
-                <img src="perfil.jpg" alt="Foto de Perfil" class="profile-img mb-3">
-                <p><strong>Nome:</strong> João da Silva</p>
-                <p><strong>Email:</strong> joao.silva@email.com</p>
-                <p><strong>Telefone:</strong> (11) 91234-5678</p>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo, SP</p>
-            </div>
-        </div>
-
-        <!-- Histórico de Compras -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h5>Histórico de Compras</h5>
-            </div>
-            <div class="card-body">
-                <ul class="list-group">
-                    <li class="list-group-item">Compra 1 - R$ 150,00 - <small>Data: 10/10/2024</small></li>
-                    <li class="list-group-item">Compra 2 - R$ 80,00 - <small>Data: 05/10/2024</small></li>
-                    <li class="list-group-item">Compra 3 - R$ 200,00 - <small>Data: 01/10/2024</small></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Opções de Edição -->
-        <div class="card mb-4">
-            <div class="card-header">
-                <h5>Editar Informações</h5>
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" value="João da Silva">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" value="joao.silva@email.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" class="form-control" id="telefone" value="(11) 91234-5678">
-                    </div>
-                    <div class="mb-3">
-                        <label for="endereco" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" value="Rua Exemplo, 123 - São Paulo, SP">
-                    </div>
-                    <button type="submit" class="btn btn-outline-dark-pink">Salvar Alterações</button>
-                </form>
+            <div class="col-md-6">
+                <div class="account-panel text-center p-4 shadow-sm">
+                    <i class="fas fa-heart account-icon"></i>
+                    <h4>Meus Favoritos</h4>
+                    <p>Você tem 4 produtos favoritos.</p>
+                    <a href="favoritos.html" class="btn edit-btn">Ver Favoritos</a>
+                </div>
             </div>
         </div>
     </main>
