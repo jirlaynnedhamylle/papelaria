@@ -35,9 +35,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="promocoes.html">Promoções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="minhaconta.html">Minha Conta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Minha Conta</a></li>
                     <li class="nav-item cart-icon">
                         <a class="nav-link" href="#">
                             <i class="fas fa-shopping-cart"></i>
@@ -56,6 +56,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://assets.ype.ind.br/uploads/material_escolar_ypedia-scaled.jpg" class="d-block w-100" alt="Promoção 1">
                 <div class="carousel-caption d-none d-md-block">
@@ -77,7 +78,16 @@
                     <p>Aproveite nossas promoções imperdíveis.</p>
                 </div>
             </div>
-       
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
 
     <!-- Cartão Fidelidade Section -->
     <main class="container my-5">
@@ -88,189 +98,87 @@
         </section>
 
         <!-- Product Carousel Section -->
-        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_gel_0_5mm_molin_flowers_18905_1_76afef01e147364b2e08014134ad0ef2.jpg" class="card-img-top" alt="Caneta Gel 0.5mm Molin Flowers">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caneta Gel 0.5mm Molin Flowers</h5>
-                                    <p class="card-text">R$ 24,50</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_universitario_tilibra_connect_10_materias_bunnyfly_19875_1_294eccbadcf81f92597acc0957ea97a3.jpg" class="card-img-top" alt="Caderno Tilibra Connect 10 Matérias BunnyFly">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caderno Tilibra Connect 10 Matérias BunnyFly</h5>
-                                    <p class="card-text">R$ 48,50</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/marca_texto_tris_holic_cute_com_carimbo_19829_1_6d0f3d7728c1834ae7b16e1aaa23d230.jpg" class="card-img-top" alt="Marca Texto Tris Holic Cute com Carimbo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Marca Texto Tris Holic Cute com Carimbo</h5>
-                                    <p class="card-text">R$ 11,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Estojo Tris com Bolso">
-                                <div class="card-body">
-                                    <h5 class="card-title">Estojo Tris com Bolso</h5>
-                                    <p class="card-text">R$ 29,90</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/files/48_f15bf331-3148-4b0b-9775-b60aacc3dd6b.jpg?v=1727805729&width=360" class="card-img-top" alt="Lápis de Cor Crayola 24 Cores">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lápis de Cor Crayola 24 Cores</h5>
-                                    <p class="card-text">R$ 34,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/files/40_22299e5d-ebaa-45e9-9ecd-5c20b24bb51a.jpg?v=1727370717&width=360" class="card-img-top" alt="Caderno de Anotações Molin Mini">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caderno de Anotações Molin Mini</h5>
-                                    <p class="card-text">R$ 19,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/products/4f1381443201a844b907ee285497f471.jpg?v=1700664525&width=360" class="card-img-top" alt="Caneta Tinteiro Molin">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caneta Tinteiro Molin</h5>
-                                    <p class="card-text">R$ 15,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/files/29_c357ee65-82f7-4cf5-8f18-ce1514be61fe.jpg?v=1725909856&width=360" class="card-img-top" alt="Lápis de Cor Faber Castell">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lápis de Cor Faber Castell</h5>
-                                    <p class="card-text">R$ 27,50</p>
-                                   <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/bloco_de_anotacoes_100_folhas_19821_1_324d3b61e86d2f81dc66af0085e96503.jpg" class="card-img-top" alt="Bloco de Anotações 100 Folhas">
-                                <div class="card-body">
-                                    <h5 class="card-title">Bloco de Anotações 100 Folhas</h5>
-                                    <p class="card-text">R$ 12,90</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/kit_de_canetas_marcadoras_19820_1_9a0c94223c9e0b35d098b1d8da3c1c91.jpg" class="card-img-top" alt="Kit de Canetas Marcadoras">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kit de Canetas Marcadoras</h5>
-                                    <p class="card-text">R$ 39,90</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/livro_de_colorir_19819_1_a8c6c5af88cb3c765d07d6fa3c2b04e3.jpg" class="card-img-top" alt="Livro de Colorir">
-                                <div class="card-body">
-                                    <h5 class="card-title">Livro de Colorir</h5>
-                                    <p class="card-text">R$ 22,50</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/lapis_de_cor_molin_19828_1_1408dada8e15dba34fc59b66f7191be5.jpg" class="card-img-top" alt="Lápis de Cor Molin">
-                                <div class="card-body">
-                                    <h5 class="card-title">Lápis de Cor Molin</h5>
-                                    <p class="card-text">R$ 35,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://images.tcdn.com.br/img/img_prod/1106500/livro_para_colorir_19818_1_91f9b1a7cd2e8cf0d4f8e9aa73a9df76.jpg" class="card-img-top" alt="Livro para Colorir">
-                                <div class="card-body">
-                                    <h5 class="card-title">Livro para Colorir</h5>
-                                    <p class="card-text">R$ 18,90</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/products/0fd59695952d19058e2163c2574b3e9e.png?v=1700667735&width=360" class="card-img-top" alt="Caneta Marcadora">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caneta Marcadora</h5>
-                                    <p class="card-text">R$ 9,90</p>
-                                    <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/products/e63d78fc056f7cb685fda593c5c38528.jpg?v=1700685513&width=360" class="card-img-top" alt="Caderno Escolar Molin">
-                                <div class="card-body">
-                                    <h5 class="card-title">Caderno Escolar Molin</h5>
-                                    <p class="card-text">R$ 26,90</p>
-                                     <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-2 mb-4">
-                            <div class="card shadow-sm">
-                                <img src="https://papelariaunicornio.com.br/cdn/shop/files/30_e3084a06-642b-465f-a989-d18e57afe70b.jpg?v=1727292318&width=360" class="card-img-top" alt="Kit de Canetas Tinteiro">
-                                <div class="card-body">
-                                    <h5 class="card-title">Kit de Canetas Tinteiro</h5>
-                                    <p class="card-text">R$ 59,90</p>
-                                      <a href="#" class="btn btn-main">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/caneta_gel_0_5mm_molin_flowers_18905_1_76afef01e147364b2e08014134ad0ef2.jpg" class="card-img-top" alt="Caneta Gel 0.5mm Molin Flowers">
+                    <div class="card-body">
+                        <h5 class="card-title">Caneta Gel 0.5mm Molin Flowers</h5>
+                        <p class="card-text">R$ 24,50</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/caderno_universitario_tilibra_connect_10_materias_bunnyfly_19875_1_294eccbadcf81f92597acc0957ea97a3.jpg" class="card-img-top" alt="Caderno Tilibra Connect 10 Matérias BunnyFly">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Tilibra Connect 10 Matérias BunnyFly</h5>
+                        <p class="card-text">R$ 48,50</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1106500/marca_texto_tris_holic_cute_com_carimbo_19829_1_6d0f3d7728c1834ae7b16e1aaa23d230.jpg" class="card-img-top" alt="Marca Texto Tris Holic Cute com Carimbo">
+                    <div class="card-body">
+                        <h5 class="card-title">Marca Texto Tris Holic Cute com Carimbo</h5>
+                        <p class="card-text">R$ 11,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Caderno Universitário Molin Pastel">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Universitário Molin Pastel</h5>
+                        <p class="card-text">R$ 42,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Caderno Universitário Molin Pastel">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Universitário Molin Pastel</h5>
+                        <p class="card-text">R$ 42,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Caderno Universitário Molin Pastel">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Universitário Molin Pastel</h5>
+                        <p class="card-text">R$ 42,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Caderno Universitário Molin Pastel">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Universitário Molin Pastel</h5>
+                        <p class="card-text">R$ 42,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="https://papelariaunicornio.com.br/cdn/shop/files/49_9675a0fd-8c5f-449d-a7f4-f1021359a9ce.jpg?v=1729101146&width=360" class="card-img-top" alt="Caderno Universitário Molin Pastel">
+                    <div class="card-body">
+                        <h5 class="card-title">Caderno Universitário Molin Pastel</h5>
+                        <p class="card-text">R$ 42,90</p>
+                        <a href="#" class="btn btn-main">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
