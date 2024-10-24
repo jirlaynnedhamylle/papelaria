@@ -7,66 +7,122 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Painel elegante */
+        /* Estilo do painel */
         .account-panel {
-            border-radius: 10px;
+            border-radius: 15px;
             border: 1px solid #ddd;
             padding: 30px;
-            background: white;
-            transition: all 0.3s ease-in-out;
+            background: #ffffff;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .account-panel:hover {
-            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
         }
 
         .account-icon {
             color: #d6336c;
-            font-size: 2rem;
+            font-size: 3rem;
             margin-bottom: 15px;
         }
 
         .edit-btn {
             color: white;
             background-color: #d6336c;
+            transition: background-color 0.3s;
+        }
+
+        .edit-btn:hover {
+            background-color: #c82333;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+        }
+
+        /* Ajustes de cores */
+        header {
+            background-color: #f1f3f5;
+        }
+
+        .user-info-panel {
+            background-color: #f8d7da;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Minha Conta Header -->
-    <header class="bg-light-pink py-3 text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <h1 class="text-dark-pink fw-bold">Minha Conta</h1>
+            <a class="navbar-brand" href="#">Viva Colors</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Minha Conta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Histórico de Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Configurações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Minha Conta Header -->
+    <header class="bg-light py-3 text-center">
+        <div class="container">
+            <h1 class="text-dark fw-bold">Minha Conta</h1>
             <p class="lead">Gerencie seus dados e preferências</p>
         </div>
     </header>
 
     <!-- Painel de Conta -->
     <main class="container my-5">
+        <div class="user-info-panel text-center">
+            <i class="fas fa-user-circle account-icon"></i>
+            <h4>Dados Pessoais</h4>
+            <p>Nome: João Silva</p>
+            <p>Email: joao.silva@gmail.com</p>
+            <button class="btn edit-btn">Editar Dados</button>
+        </div>
+
         <div class="row g-4">
             <div class="col-md-6">
-                <div class="account-panel text-center p-4 shadow-sm">
-                    <i class="fas fa-user-circle account-icon"></i>
-                    <h4>Dados Pessoais</h4>
-                    <p>Nome: João Silva</p>
-                    <p>Email: joao.silva@gmail.com</p>
-                    <button class="btn edit-btn">Editar Dados</button>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="account-panel text-center p-4 shadow-sm">
+                <div class="account-panel text-center p-4">
                     <i class="fas fa-heart account-icon"></i>
                     <h4>Meus Favoritos</h4>
                     <p>Você tem 4 produtos favoritos.</p>
                     <a href="favoritos.html" class="btn edit-btn">Ver Favoritos</a>
                 </div>
             </div>
+            <div class="col-md-6">
+                <div class="account-panel text-center p-4">
+                    <i class="fas fa-box account-icon"></i>
+                    <h4>Histórico de Pedidos</h4>
+                    <p>Você tem 3 pedidos realizados.</p>
+                    <a href="historico.html" class="btn edit-btn">Ver Pedidos</a>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer class="bg-light-pink py-4">
+    <footer class="bg-light py-4">
         <div class="container text-center">
-            <p class="text-dark-pink mb-0">&copy; 2024 Viva Colors. Todos os direitos reservados.</p>
+            <p class="mb-0">&copy; 2024 Viva Colors. Todos os direitos reservados.</p>
         </div>
     </footer>
 
