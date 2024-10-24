@@ -72,7 +72,8 @@ background: linear-gradient(90deg, #e70a3a8f 0%, rgba(255,255,255,0) 48%, rgba(2
 /* Styling for the carousel */
 .carousel-item img {
     object-fit: cover;
-    height: 400px;
+    height: 600px;
+
 }
 
 /* Footer styling */
