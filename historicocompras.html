@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: var(--light-color);
+            font-family: 'Poppins', sans-serif;
+            color: var(--secondary-color);
+        }
+
+        :root {
+            --main-color: #d42249; /* Cor vibrante e sofisticada */
+            --accent-color: #ffccf9;
+            --secondary-color: #6a0572; /* Roxo sofisticado */
+            --light-color: #fff4f9;
+            --dark-pink: #d42249;;
         }
 
         .navbar {
-            background-color: #d6336c;
+            background: linear-gradient(90deg, var(--main-color), var(--accent-color));
         }
 
         .navbar-brand, .nav-link {
             color: white !important;
         }
 
-        header {
-            background-color: #ffffff;
-            border-bottom: 2px solid #d6336c;
+        h1 {
+            color: var(--main-color); /* Nova cor vibrante para o título */
+            font-weight: bold;
         }
 
         .container {
@@ -62,6 +72,10 @@
             height: auto;
             margin-right: 10px; /* Espaço entre a imagem e o texto */
         }
+
+        footer {
+            background: linear-gradient(90deg, var(--main-color), var(--accent-color));
+        }
     </style>
 </head>
 <body>
@@ -94,7 +108,7 @@
     <!-- Header -->
     <header class="py-3 text-center">
         <div class="container">
-            <h1 class="text-dark fw-bold">Histórico de Compras</h1>
+            <h1>Histórico de Compras</h1>
             <p class="lead">Veja suas compras anteriores</p>
         </div>
     </header>
