@@ -79,9 +79,7 @@
             font-weight: bold;
         }
 
-        .nav-link {
-            color: var(--secondary-color) !important;
-        }
+       
 
         h1 {
             color: var(--main-color);
@@ -129,10 +127,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Minha Conta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Histórico de Pedidos</a>
+                        <a class="nav-link" href="index.html">Início</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Configurações</a>
+                    <li class="nav-item cart-icon">
+                        <a class="nav-link" href="carrinho.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-danger">0</span>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sair</a>
@@ -142,13 +143,13 @@
         </div>
     </nav>
 
-    <!-- Minha Conta Header -->
-    <header class="text-center">
-        <div class="container">
-            <h1>Minha Conta</h1>
-            <p class="lead">Gerencie seus dados e preferências</p>
+    <header class="bg-light-pink py-3">
+        <div class="container text-center">
+            <h1 class="text-dark-pink fw-bold">Minha Conta</h1>
+            <p class="lead">Gerencie seus dados e prênefercisa</p>
         </div>
     </header>
+   
 
     <!-- Painel de Conta -->
     <main class="container my-5">
